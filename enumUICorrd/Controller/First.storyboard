@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vs5-16-edq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="icJ-He-PQy">
+            <objects>
+                <viewController id="Vs5-16-edq" customClass="FirstViewController" customModule="enumUICorrd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5bR-bM-99f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-qx-6iJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I00-0q-ehN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DIr-qx-6iJ" firstAttribute="leading" secondItem="I00-0q-ehN" secondAttribute="leading" id="J3O-9g-yCH"/>
+                            <constraint firstItem="I00-0q-ehN" firstAttribute="trailing" secondItem="DIr-qx-6iJ" secondAttribute="trailing" id="uU2-eT-2jY"/>
+                            <constraint firstItem="I00-0q-ehN" firstAttribute="bottom" secondItem="DIr-qx-6iJ" secondAttribute="bottom" priority="750" id="wqt-Sa-3Gi"/>
+                            <constraint firstItem="DIr-qx-6iJ" firstAttribute="top" secondItem="I00-0q-ehN" secondAttribute="top" id="yUQ-13-N43"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4cR-ac-zoB"/>
+                    <connections>
+                        <outlet property="stackView" destination="DIr-qx-6iJ" id="u5d-Fe-Iui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UvV-aT-2PI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2036.2318840579712" y="121.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
